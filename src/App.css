@@ -143,23 +143,24 @@
 @media (max-width: 600px) {
 	.card {
 		max-width: 100%;
+		width: 100%;
 		padding: 1.5em 1em;
 	}
 
 	.card__icon {
-		width: 100px;
+		width: 80px;
 	}
 
 	.card__temperature {
-		font-size: 2rem;
+		font-size: 1.8rem;
 	}
 
 	.card__temp-feels {
-		font-size: 1.2rem;
+		font-size: 1.1rem;
 	}
 
 	.card__info {
-		grid-template-columns: 1fr; /* En pantallas pequeñas, las cajas de información se alinean en una sola columna */
+		grid-template-columns: 1fr;
 	}
 
 	.card__info-box {
@@ -170,15 +171,17 @@
 	.search input {
 		font-size: 14px;
 		padding: 8px;
+		width: 100%;
 	}
 
 	.card__button {
 		font-size: 12px;
 		padding: 8px;
+		width: 40px;
 	}
 }
 
-/* En pantallas medianas (tablets y pequeños portátiles) */
+/* En pantallas medianas  */
 @media (max-width: 900px) {
 	.card {
 		max-width: 95%;
@@ -198,10 +201,7 @@
 	}
 
 	.card__info {
-		grid-template-columns: repeat(
-			2,
-			1fr
-		); /* 2 columnas en pantallas medianas */
+		grid-template-columns: repeat(2, 1fr);
 	}
 
 	.card__info-box {
@@ -229,10 +229,7 @@
 	}
 
 	.card__info {
-		grid-template-columns: repeat(
-			3,
-			1fr
-		); /* Mantener las 3 columnas en pantallas grandes */
+		grid-template-columns: repeat(3, 1fr);
 	}
 
 	.card__info-box {
